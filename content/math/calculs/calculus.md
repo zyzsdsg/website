@@ -24,3 +24,5 @@ where $S_t$ is the stock price at time $t$, $\mu$ is the drift term, $\sigma$ is
 
 To fully understand this equation, one must first understand the concept of Brownian motion.
 Brownian motion is a stochastic process with normally distributed increments, continuous paths, and independent stationary increments. It serves as the mathematical foundation for modeling random fluctuations in financial markets.
+
+Here is a test.
