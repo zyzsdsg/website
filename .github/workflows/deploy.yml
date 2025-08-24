@@ -28,7 +28,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: zyzsdsg/zyzsdsg.github.io
           publish_dir: ./public
           publish_branch: main   # 目标仓库的分支
