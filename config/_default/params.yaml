@@ -1,33 +1,33 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# # SITE SETUP
+# # Guide: https://docs.hugoblox.com/tutorial/
+# # Documentation: https://docs.hugoblox.com/
+# # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Appearance
+# # Appearance
 
-appearance:
-  theme_day: minimal
-  theme_night:
-  font: native
-  font_size: L
+# appearance:
+#   theme_day: minimal
+#   theme_night:
+#   font: native
+#   font_size: L
 
-# SEO
+# # SEO
 
-marketing:
-  seo:
-    site_type: Organization
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
-  verification:
-    google: ''
-    baidu: ''
+# marketing:
+#   seo:
+#     site_type: Organization
+#     local_business_type: ''
+#     org_name: ''
+#     description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
+#     twitter: 'GetResearchDev'
+#   analytics:
+#     google_analytics: ''
+#     baidu_tongji: ''
+#     google_tag_manager: ''
+#     microsoft_clarity: ''
+#   verification:
+#     google: ''
+#     baidu: ''
 
 # Site header
 
@@ -41,18 +41,18 @@ header:
     show_search: true
     highlight_active_link: false
 
-# Site footer
+# # Site footer
 
-footer:
-  copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+# footer:
+#   copyright:
+#     notice: '© {year} Yuzhe zhang. This work is licensed under {license}'
+#     license:
+#       enable: true
+#       allow_derivatives: false
+#       share_alike: true
+#       allow_commercial: false
 
-# Localization
+# # Localization
 
 locale:
   date_format: 'Jan 2, 2006'
