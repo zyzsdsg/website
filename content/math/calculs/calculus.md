@@ -25,4 +25,80 @@ where $S_t$ is the stock price at time $t$, $\mu$ is the drift term, $\sigma$ is
 To fully understand this equation, one must first understand the concept of Brownian motion.
 Brownian motion is a stochastic process with normally distributed increments, continuous paths, and independent stationary increments. It serves as the mathematical foundation for modeling random fluctuations in financial markets.
 
-Here is a test.
+
+# Brownian Motion
+
+At time \(t = 0\), a standard Brownian motion satisfies:
+
+$$
+B_0 = 0
+$$
+
+---
+
+## Increment Distribution
+
+The increment of Brownian motion over a small interval \([t, t+dt]\) is defined as:
+
+$$
+dB_t = B_{t+dt} - B_t
+$$
+
+and it follows a **normal distribution** with mean \(0\) and variance \(dt\):
+
+$$
+dB_t \sim \mathcal{N}(0, dt)
+$$
+
+---
+
+## Independent Increments
+
+If two intervals do not overlap, say \((u,v)\) and \((m,n)\), then the increments are **independent random variables**:
+
+$$
+B_v - B_u, \quad B_n - B_m
+$$
+
+# Normal Distributon
+
+The normal distribution is a fundamental distribution, and its equation is:
+
+$$
+\int^{\infty}_{-\infty}\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx = 1
+$$
+Where $\mu$ is the mean of the random variable $x$, $\sigma ^2$ is the variance of $x$.
+
+For the Browain motion, if the time interval is 1, the mean is 0 and variance is 1, which reduces to standard normal distribution, and its equation is:
+$$
+\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}} dx = 1
+$$
+
+If the interval is $t$ not 1, the equation change to:
+$$
+\int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi t}} e^{-\frac{x^2}{2t}} dx = 1
+$$
+
+These are called cumulative distribution functions (CDFs).  
+If we consider the probability of a random variable $X$ being less than a number $x$, and denote the CDF as $F$, then the expression $F(x)$ means the probability of the random variable being less than $x$.
+
+$$
+F(x) = P(X \leq x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi t}} \, e^{-\frac{x^2}{2t}}  dx
+$$
+
+The derivative of $F(x)$ is the probability density function (PDF).  
+
+For the **standard normal distribution**:
+$$
+f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+$$
+
+For the **Brownian motion $B_t$ at time $t$**, since $B_t \sim \mathcal{N}(0,t)$:
+$$
+f(B_t) = \frac{1}{\sqrt{2\pi t}} e^{(-\frac{B_t^2}{2t})}
+$$
+
+To prove standard normal distribution has mean  $0$, we can use the defination:
+$$
+\mu = \int_{-\infty}^{\infty}x \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx
+$$
