@@ -1,8 +1,9 @@
 ---
-title: Browain motion
+title: Calculus
 date: 2025-08-24
 type: book 
 math: true
+weight: 5
 ---
 
 In financial engineering (FE), one of the most fundamental tasks is option pricing. Among the various types of options, the European option plays a central role, as it admits a closed-form solution. Therefore, to build a comprehensive understanding of FE, the first step is to study the European option. This chapter introduces the essential mathematical tools needed to analyze and price such instruments.
@@ -96,9 +97,4 @@ $$
 For the **Brownian motion $B_t$ at time $t$**, since $B_t \sim \mathcal{N}(0,t)$:
 $$
 f(B_t) = \frac{1}{\sqrt{2\pi t}} e^{(-\frac{B_t^2}{2t})}
-$$
-
-To prove standard normal distribution has mean  $0$, we can use the defination:
-$$
-\mu = \int_{-\infty}^{\infty}x \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx
 $$

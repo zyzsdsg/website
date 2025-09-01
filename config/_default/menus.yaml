@@ -7,6 +7,9 @@ main:
   - name: Math
     url: math
     weight: 10
+  - name: Machine Learning
+    url: machinelearning
+    weight: 15
 #   - name: News
 #     url: post
 #     weight: 20
